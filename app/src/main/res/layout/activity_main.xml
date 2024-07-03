@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mainTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Кликов:0"
+            android:textColor="#0000ff">
+
+        </TextView>
+        <!-- -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:orientation="vertical">
+                <!-- кнопка увеличения -->
+                <ImageButton
+                    android:id="@+id/mainBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:contentDescription="A tiny Android icon"
+                    android:src="@drawable/sova">
+
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/firsttxt"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="Увеличить"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+                <!-- кнопка уменьшения -->
+                <ImageButton
+                    android:id="@+id/secBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/sova2"
+                    android:contentDescription="TODO"></ImageButton>
+
+                <TextView
+                    android:id="@+id/secondtxt"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="Уменьшить"></TextView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                android:layout_gravity="left"
+                android:orientation="vertical">
+                <!-- кнопка обнуления -->
+                <ImageButton
+                    android:id="@+id/sbrosBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/sova3"
+                    android:contentDescription="TODO"></ImageButton>
+
+                <TextView
+                    android:id="@+id/thirdtxt"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="Обнулить"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/imgScore"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:visibility="visible"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtNum"
+                android:layout_width="90dp"
+                android:layout_height="60dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/uvelBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="70dp"
+                    android:text="@string/click_me_plus"
+                    android:visibility="invisible"></Button>
+
+                <Button
+                    android:id="@+id/umenBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_me_minus"
+                    android:visibility="invisible"></Button>
+
+                <Button
+                    android:id="@+id/obnulBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/click_me_0"
+                    android:visibility="invisible"></Button>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
